@@ -68,7 +68,19 @@
 </template>
 
 <script>
-export default {
+import { useHead } from '@vueuse/head'
 
+export default {
+  setup() {
+    useHead({
+      title: 'Lucas Blog',
+      meta: [
+        {
+          name: 'description',
+          content: '歡迎來到我的部落格~',
+        },
+      ],
+    })
+  },
 }
 </script>

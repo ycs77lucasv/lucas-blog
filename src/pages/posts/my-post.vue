@@ -44,7 +44,19 @@
 </template>
 
 <script>
-export default {
+import { useHead } from '@vueuse/head'
 
+export default {
+  setup() {
+    useHead({
+      title: '我的文章 - Lucas Blog',
+      meta: [
+        { name: 'description', content: 'Hi！我是 Lucas' },
+        { property: 'og:title', content: '我的文章 - Lucas Blog' },
+        { property: 'og:description', content: 'Hi！我是 Lucas' },
+        { property: 'og:image', content: 'https://cdn.jsdelivr.net/npm/slidev-theme-ycs77/public/images/lucas_v_avatar.jpg' },
+      ],
+    })
+  },
 }
 </script>

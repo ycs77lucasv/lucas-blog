@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/head": "^0.7.4",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
   },
@@ -20,6 +21,7 @@
     "unplugin-icons": "^0.12.23",
     "unplugin-vue-components": "^0.17.9",
     "vite": "^2.7.2",
-    "vite-plugin-pages": "^0.19.6"
+    "vite-plugin-pages": "^0.19.6",
+    "vite-ssg": "^0.17.2"
   }
 }
