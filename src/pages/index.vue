@@ -21,13 +21,13 @@
   <main class="container px-4 py-12">
     <ul class="space-y-10 sm:space-y-16">
       <li class="sm:flex" v-for="i in 4">
-        <RouterLink to="/">
+        <RouterLink to="/posts/my-post">
           <img class="aspect-video object-cover rounded-lg sm:w-[300px]" src="https://lucas-hiskio-2021-tailwindcss-slide.vercel.app/thumbnail.png" alt="">
         </RouterLink>
 
         <div class="mt-4 sm:mt-0 sm:ml-6">
           <h4 class="text-2xl font-bold tracking-wide">
-            <RouterLink to="/" class="text-gray-800 hover:text-violet-600">
+            <RouterLink to="/posts/my-post" class="text-gray-800 hover:text-violet-600">
               我的文章
             </RouterLink>
           </h4>
@@ -39,7 +39,7 @@
           </p>
 
           <div class="mt-4">
-            <RouterLink to="/" class="text-violet-500 hover:text-violet-400 tracking-wider">
+            <RouterLink to="/posts/my-post" class="text-violet-500 hover:text-violet-400 tracking-wider">
               更多 →
             </RouterLink>
           </div>
