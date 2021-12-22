@@ -16,6 +16,7 @@ export default defineConfig({
           prefix: false,
           enabledCollections: [
             'heroicons-outline',
+            'ri',
           ],
         }),
       ],
